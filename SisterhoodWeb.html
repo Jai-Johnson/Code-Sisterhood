@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<title>Code*Sisterhood</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+.menu {
+  display: none;
+}
+body {
+  background-color: #AED157;
+  height: auto;
+  width: auto;
+}
+
+#Title {
+  text-align: center;
+  font-size: 65px;
+  margin: 0px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.rotate {
+  transform: rotate(0deg);
+}
+.Headings {
+  font-size: 35px;
+  text-align: center;
+}
+.Descriptions {
+  text-align: center;
+  font-size: 18px;
+}
+div.DescriptionsL {
+  width: 1275px;
+  padding-right: 400px;
+  margin-left: 440px;
+  margin-top: 80px;
+  font-size: 25px;
+}
+div.DescriptionsR {
+  width: 5000px;
+  padding-left: 200px;
+  margin-right: 800px;
+  margin-top: 125px;
+  font-size: 25px;
+}
+.oppDescriptions {
+  font-size: 20px;
+}
+.WomenL {
+  text-align: left;
+  font-size: 25px;
+  margin-left: 100px;
+}
+.imgL {
+  margin: 20px;
+  margin-left: 100px;
+}
+.WomenR {
+  text-align: right;
+  font-size: 25px;
+  margin-right: 100px;
+}
+.imgR {
+  margin: 20px;
+  margin-right: 70px;
+}
+.Names {
+  text-align: center;
+  font-size: 30px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+  background: #74776E;
+  color: white;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 1000px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.opcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tabs {
+  overflow:hidden;
+white-space: nowrap;/*prevents wrapping*/
+display:inline-block;
+zoom:1; *display: inline;/*IE7 Fix for inline-block*/
+width: 240px;
+}
+
+img {
+  margin: 50px;
+  margin-bottom: 0px
+}
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {
+  vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="tabs">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="tabs">
+      <a href="#stats" class="w3-button w3-block w3-black">STATISTICS</a>
+    </div>
+    <div class="tabs">
+      <a href="#quotes" class="w3-button w3-block w3-black">QUOTES</a>
+    </div>
+    <div class="tabs">
+      <a href="#bio" class="w3-button w3-block w3-black">ALL ABOUT US</a>
+    </div>
+    <div class="tabs">
+      <a href="#oppurtunity" class="w3-button w3-block w3-black">OPPORTUNITIES</a>
+    </div>
+    <div class="tabs">
+      <a href="#game" class="w3-button w3-block w3-black">GAME</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<br>
+<br>
+<br>
+  <center>
+    <p id = "Title">Code*Sisterhood</p>
+  </center>
+  <div class="slideshow-container">
+    <div class="mySlides1">
+      <img src="https://news.janegoodall.org/wp-content/uploads/2017/06/we_r_all_wonderwomen_sm.jpg" style="width:100%">
+    </div>
+  <div class="mySlides1">
+    <img src="https://files.realpython.com/media/Introduction-to-Python_Watermarked.48eeee4e1109.jpg" style="width:100%">
+  </div>
+  <div class="mySlides1">
+    <img src="https://astanatimes.com/wp-content/uploads/2018/10/Gender-Equality.jpg" style="width:100%">
+  </div>
+  <div class="mySlides1">
+    <img src="https://australiascience.tv/app/uploads/2017/11/Women-in-STEM-1140x640-02.jpg" style="width:100%">
+  </div>
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <h5>Follow our Instagram!!<h5>
+    <a href="https://www.instagram.com/code_sisterhood/" class="fa fa-instagram"></a>
+  </div>
+
+<div><h2 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">POWERFUL WOMEN</span></h2>
+
+  <u><p class = "WomenL">Priscilla Chan </p></u>
+  <p style="float: left; clear: left"><img src="https://specials-images.forbesimg.com/imageserve/59f5ef12a7ea436b47b47e3e/416x416.jpg?background=000000&cropX1=1297&cropX2=3499&cropY1=125&cropY2=2328" width ="275px" height = "300px" class = "imgL"></p>
+  <div class = "DescriptionsL"> Priscilla Chan is an American Pediatrician and Philanthropist, she graduated from Harvard University with a Bachelors Degree in Biology. She later taught science at the private Harker School for a year. Priscilla went back to school and received her medical degree from the University of California, San Francisco (UCSF). Even though her husband is Mark Zuckerberg, Priscilla is also making her own moves.</div>
+<br>
+  <u><p class = "WomenR">Katherine Johnson</p></u>
+  <p style="float: right; clear: right"><img src="http://www.nasa.gov/sites/default/files/thumbnails/image/1966-l-06717.jpeg" width = "250px" height = "300px" class = "imgR">
+  <div class = "DescriptionsR">Katherine Johnson is an Amercian mathematician, she graduated from West Virginia State College with a Bachelors Degree in Mathematics and French. She then was hired by NACA/ NASA in 1953. Katherine’s mathematical calculations of orbital mechanics at NASA had a great impact on the success of the first U.S. space flights.</div>
+<br>
+ <u><p class = "WomenL">Stacey Cunningham </p></u>
+ <p style="float: left; clear: left"><img src="https://specials-images.forbesimg.com/imageserve/5c06eb104bbe6f0f2aa14208/416x416.jpg?background=000000&cropX1=1388&cropX2=4833&cropY1=491&cropY2=3934" width = "275px" height = "300px" class = "imgL">
+ <div class = "DescriptionsL">Stacey Cunningham as child was always one of the few females that were interested in science and mathematics in school. She graduated from Lehigh University with a Bachelors Degree in Industrial Engineering. Now Stacey is a banker and the first female president of the New York Stock Exchange (NYSE).</div>
+<br>
+ <u><p class = "WomenR">Mary Jackson</p></u>
+ <p style = "float:right; clear: right"><img src="https://www.obap.org/assets/images/pioneer_photos/Mary%20W.%20Jackson.jpg" width = "300px" height = "301px" class = "imgR">
+ <div class = "DescriptionsR">Mary Jackson was an African American mathematician and aerospace engineer, she graduated from Hampton Institute with a Bachelor of Science Degree in Mathematics and Physical Science. She was first hired by NASA in 1951 and did a lot of computing work, but after taking advanced engineering classes Mary became NASA’s first female African American engineer in 1958.</div>
+<br>
+ <u><p class = "WomenL"> Liu Qing </p></u>
+ <p style="float: left; clear: left"><img src="https://specials-images.forbesimg.com/imageserve/59fc7ed14bbe6f37dda1ae0c/416x416.jpg?background=000000&cropX1=592&cropX2=1877&cropY1=8&cropY2=1292" width = "275px" height = "300px" class = "imgL">
+ <div class = "DescriptionsL">Liu Qing is a Chinese business executive, she graduated from Peking University with a Bachelors Degree in Computer Science, a Masters Degree in Computer Science from Harvard University, and then an honorary Doctor of Commercial Science from New York University. Liu is now the President of Didi Chuxing, China’s largest mobile transportation platform.</div>
+<br>
+ <u><p class = "WomenR">Dorothy Vaughan</p></u>
+ <p style="float: right; clear: right"><img src="https://www.nasa.gov/sites/default/files/styles/side_image/public/thumbnails/image/youngdorothyvaughan.jpeg?itok=sSWS3yi_" width = "225px" height = "300px" class = "imgR">
+ <div class = "DescriptionsR">Dorothy Vaughan was an African American mathematician and human computer, she graduated from Wilberforce with a Bachelors Degree in Mathematics. She was the first African American woman to supervise a group of staff in the research center. Dorothy taught herself and a group of women how to read a certain programming language which made her the head of the programming section.</div>
+<br>
+ <u><p class = "WomenL"> Jacinda Ardern </p></u>
+ <p style="float: left; clear: left"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ardern_Cropped.png/220px-Ardern_Cropped.png" width = "275px" height = "300px" class = "imgL">
+ <div class = "DescriptionsL"> Jacinda Arden is a New Zealand Politician, she graduated from the University of Waikato with a Bachelors of Communication Studies in politics and public relations. Jacinda is serving as the 40th Prime Minister since October 2017 and also serving as the Leader of the Labor Party since August 2017.</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+<p><iframe width="250" height="315" src="https://www.youtube.com/embed/j85fGU3PeeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class = "center"></iframe></p>
+<p><iframe width="250" height="315" src="https://www.youtube.com/embed/6Rfn94k717U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class = "center"></iframe></p>
+<p><iframe width="250" height="315" src="https://www.youtube.com/embed/dSHJYyRViIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class = "center"></iframe></p>
+<p><iframe width="250"height="315" src="https://www.youtube.com/embed/cRI1e86ADBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen class = "center"></iframe></p>
+</div>
+</header>
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!--STATISTCS -->
+<div class="w3-container" id="stats">
+  <div class="w3-content" style="max-width:700px">
+
+    <h2 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">STATISTICS</span></h2>
+    <center>
+      <font size = "5"><b>By the age of two or three, children grasp fundamental norms around gender. Consciously or unconsciously, parents, teachers and peers coax or coerce children into a restricted set of choices based on their gender. This is a fundamental reason we have not yet achieved gender equality. Starting at a younger age, girls should be shown the different opportunities they have waiting for them.</b></p></font>
+    </center>
+
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Women');" id="myLink">
+        <div class="w3-col s6 tablink">Women</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Men');">
+        <div class="w3-col s6 tablink">Men</div>
+      </a>
+    </div>
+
+    <div id="Women" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Preschool and Kindergarden Teachers</h5>
+      <p class="w3-text-grey">97.5% are Women(2016)</p><br>
+
+      <h5>Food Preparation and Serving Related Occupations</h5>
+      <p class="w3-text-grey">53.5% are Women(2016)</p><br>
+
+      <h5>Broadcast and Sound Engineering Technicians</h5>
+      <p class="w3-text-grey">15.2% are Women(2016)</p><br>
+
+      <h5>Architecture and Engineering Occupations</h5>
+      <p class="w3-text-grey">14.2% are Women(2016)</p><br>
+
+      <h5>Electrical and Electronics Engineering</h5>
+      <p class="w3-text-grey">10.8% are Women(2016)</p>
+    </div>
+
+    <div id="Men" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Preschool and Kindergarden Teachers</h5>
+      <p class="w3-text-grey">2.5% are Men(2016)</p><br>
+
+      <h5>Food Preparation and Serving Related Occupations</h5>
+      <p class="w3-text-grey">46.5% are Men(2016)</p><br>
+
+      <h5>Broadcast and Sound Engineering Technicians</h5>
+      <p class="w3-text-grey">84.8% are Men(2016)</p><br>
+
+      <h5>Architecture and Engineering Occupations</h5>
+      <p class="w3-text-grey">85.8% are Men(2016)</p><br>
+
+      <h5>Electrical and Electronics Engineering</h5>
+      <p class="w3-text-grey">89.2% are Men(2016)</p>
+    </div>
+<br>
+    <div class='tableauPlaceholder' id='viz1565621670746' style='position: relative'><noscript><a href='https:&#47;&#47;inequality.org&#47;gender-inequality&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;U_&#47;U_S_genderpaygaphasnarrowedonlyslightlyinpasttwodecades&#47;Dashboard1&#47;1_rss.png' style ='border: none;' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='U_S_genderpaygaphasnarrowedonlyslightlyinpasttwodecades&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;U_&#47;U_S_genderpaygaphasnarrowedonlyslightlyinpasttwodecades&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="quotes">
+  <div class="w3-content" style="max-width:700px">
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">QUOTE SLIDESHOW</span></h2>
+    <margin>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="C:/Users/GWC-JSYVG\Documents/GWC%202019/HTML/quote_1.PNG" style="width:100%" class = "center">
+  </div>
+
+  <div class="mySlides2">
+    <img src="C:/Users/GWC-JSYVG/Documents/GWC%202019/HTML/quote_2.PNG" style="width:100%" class = "center">
+  </div>
+
+  <div class="mySlides2">
+    <img src="C:/Users/GWC-JSYVG/Documents/GWC%202019/HTML/quote_3.PNG" style="width:100%" class = "center">
+  </div>
+
+  <div class="mySlides2">
+    <img src="C:/Users/GWC-JSYVG/Documents/GWC%202019/HTML/quote_4.PNG" style="width:100%" class = "center">
+  </div>
+
+  <div class="mySlides2">
+    <img src="C:/Users/GWC-JSYVG/Documents/GWC%202019/HTML/quote_5.PNG" style="width:100%" class = "center">
+  </div>
+
+  <div class="mySlides2">
+    <img src="C:/Users/GWC-JSYVG/Documents/GWC%202019/HTML/quote_6.PNG" style="width:100%" class = "center">
+  </div>
+
+  <div class="mySlides2">
+    <img src="C:/Users/GWC-JSYVG/Documents/GWC%202019/HTML/quote_7.PNG" style="width:100%" class = "center">
+  </div>
+</margin>
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"At Girls Who Code, we strive to be Brave and Resilient, Socially Just, Emotionally Inteligent, and Intellectually Curious."</i></p>
+      <p>- Girls Who Code Sisterhood</p>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="bio">
+    <div class="w3-content" style="max-width:700px">
+      <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ALL ABOUT US</span></h2>
+      <div class="row">
+        <div class="column" style="background-color:#aaa;">
+          <p class = "Names">Jai Johnson</p>
+          <img src="C:/Users/GWC-JSYVG/Documents/GWC%202019/HTML/IMG_6057.jpg"style="width:50%" style="height:30%" class = "rotate">
+          <br>
+          <p class = "Descriptions">Hello, my name is Jai Johnson I am a rising junior going to ESUMS (Engineering and Science University Magnet School). I was first introduced to coding by my school because we have a lot of different engineering classes that also need coding. I learned about Girls Who Code from another engineering program, NSBE, that I am apart of. Being introduced to this program gave me more of an interest to how coding effects my everyday life. My favorite parts of this program was the robotics and website portion. I love to play volleyball and to swim, on my free time I like to read manga and watch anime. I hope you enjoy our website!!!:)</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+          <p class = "Names">Brianna McCalla</p>
+          <img src="C:/Users/GWC-JSYVG/Documents/GWC%202019/HTML/IMG_6064.jpg"style="width:50%" style="height:30%" class = "rotate">
+          <br>
+          <p class = "Descriptions">Hello my name is Brianna and I will be a junior this year at Central Christian Academy. In sophmore year I started attending a  Girls Who Code club in my community, and it was a fun experience.This summer of 2019 I started Girls Who Code Summer Immersion Program. It was a great experience to learn how to code, and to get to know new people from different places in Connecticut and New York. My favorite things are listening to music, sports, making videos, and producing music. A woman that has inspired me in my life is Joan of Arc. She fought the Crusade War even though in that time women didn’t fight in battles she took a stand and fought for her country.</p>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+          <p class = "Names">Megha Gupta</p>
+          <img src="C:/Users/GWC-JSYVG/Documents/GWC%202019/HTML/IMG_6054.jpg"style="width:50%" style="height:30%" class = "rotate">
+          <br>
+          <p class = "Descriptions">Hi everyone! I'm Megha and I am a senior at Wilton High School. I was introduced to coding when I attended a Girls Who Code workshop at my town's library. I have enjoyed learning python, HTML, CSS and a lot more at the GWC Summer Immersion Program. In my free time, I enjoy watching mystery/thriller tv shows and playing card games with my parents.
+Through this website, I hope to inspire girls and tell them about different STEM opportunities (pop over to the opportunities page if you have time). Enjoy!</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img src="C:/Users/GWC-JSYVG\Documents/GWC%202019/HTML/Group2.jpg" style="width:45%">
+    </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="oppurtunity">
+  <div class="w3-content" style="max-width:700px">
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">OPPORTUNITY PAGE</span></h2>
+    <p class = "Headings">Below are opportunities for young women that are interested in different STEM fields or young women that are just trying to find out what careers are for them.
+    <ul>
+      <u><li><p class = "oppDescriptions">Girls Who Code Summer Immersion Program</p></u>
+      <ul>
+        <li><i>Girls Who Code is an international nonprofit working to close the gender gap in technology. Their Summer Immersion Program began in 2012 in New York City, offering rising 11th and 12th grade girls 300+ hours of immersive instruction in web development and design, robotics, and mobile development with mentorship and exposure to top female engineers and entrepreneurs.</li>
+    </i></ul>
+    </li>
+
+    <u><li><p class = "oppDescriptions">Boston Leadership Institute <i>(Boston, MA)</i></p></u>
+
+    <ul>
+      <li><i> The Boston Leadership Institute offers need-based, full scholarships to a limited number of highly qualified teenagers who wish to participate in select three-week STEM research programs.
+    </i></li>
+    </ul>
+    </li>
+
+    <u><li><p class = "oppDescriptions">Nepris</p></u>
+    <ul>
+      <li><i>Nepris is a free online tool that virtually connects students to educators in order to bring real world relevance and career exposure to all students. Nepris also provides a skills-based volunteering platform for organizations to extend education outreach, and build their brand among the future workforce.
+    </i></li>
+    </ul>
+    </li>
+
+    <u><li><p class = "oppDescriptions">Invent it. Build it. <i>society of women engineers</i></p></u>
+    <ul>
+      <li><i>All attendees will spend the morning at the STEM EXPO, where they can learn about local engineering clubs, engineering camps, competitions, after-school programs, scholarships and more. In the afternoon, Invent it. Build it. is divided into three parts: the SWE Middle School Girls Program, the Parent/Educator Program (PEP) and the High School Girls Program. Each program is designed to engage the audience in STEM activities and provide them with resources that will help them, their students or their children pursue a path in engineering and technology.
+    </i></li>
+    </ul>
+    </li>
+
+    <u><li><p class = "oppDescriptions">Girlstart</p></u>
+    <ul>
+      <li><i>Girls currently in 4th-5th & 6th-8th grades will discover the fun side of STEM careers at this unique annual conference just for them. The workshop is packed with three hands-on workshops led by women in science, technology, engineering, and math fields.
+    </i></li>
+    </ul>
+    </li>
+
+    </ul>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Addressing those is a key to moving forward—but it’s only part of the picture. To increase gender diversity in STEM, there’s a latent, untapped opportunity staring us in the face: girls’ strong desire to change the world. We just need to help girls connect the dots between changing the world and STEM. </i></p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" id="game">
+  <div class="w3-content" style="max-width:700px">
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">GAME</span></h2>
+    <center>
+      <h4>Play our Scratch Game!!:)</h4>
+<br>
+<iframe src="https://scratch.mit.edu/projects/323850781/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </center>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Created by Code*Sisterhood</p>
+  <h6>Follow our Instagram!!<h6>
+  <a href="https://www.instagram.com/code_sisterhood/" class="fa fa-instagram"></a>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+
+//SLIDESHOW
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+
+//MAP
+var divElement = document.getElementById('viz1565621670746');
+var vizElement = divElement.getElementsByTagName('object')[0];
+vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+</body>
+</html>
